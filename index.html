@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment 1 - Linh Vu</title>
+    <style type="text/css">
+        body {
+            background-color: gainsboro !important;
+        }
+    </style>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+</head>
+
+<body>
+    <script src="app.js"></script>
+    <br />
+    <h6>Get all tweets</h6>
+    <div class="text-center">
+        <button id="getTweets" class="btn btn-primary">Show</button>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <h6>Get all users' ID'</h6>
+    <div class="text-center">
+        <button id="getUsersID" class="btn btn-primary">Show</button>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <h6>Get the details of tweet</h6>
+    <form id="form1" method="POST">
+        <table style="margin-left:auto; margin-right:auto;">
+            <tr>
+                <td><label>ID</label></td>
+                <td><input class="form-control" type="number" name="id" id="id" required></td>
+            </tr>
+        </table>
+        <br />
+        <div class="text-center">
+            <button id="getDetails" class="btn btn-primary">Show</button>
+        </div>
+    </form>
+    <br />
+    <br />
+    <br />
+
+    <h6>Create a tweet</h6>
+    <form id="form1" method="POST">
+        <table style="margin-left:auto; margin-right:auto;">
+            <tr>
+                <td><label>ID</label></td>
+                <td><input class="form-control" type="number" name="id" id="id" required></td>
+            </tr>
+            <tr>
+                <td><label>Text</label></td>
+                <td><input class="form-control" type="text" name="text" id="text" required></td>
+            </tr>
+        </table>
+        <br />
+        <div class="text-center">
+            <button type="submit" id="createTweet" class="btn btn-success">Submit</button>
+        </div>
+    </form>
+    <br />
+    <br />
+    <br />
+
+    <h6>Update a screen_name</h6>
+    <form id="form1" method="POST">
+        <table style="margin-left:auto; margin-right:auto;">
+            <tr>
+                <td><label>Screen_name</label></td>
+                <td><input class="form-control" type="text" name="screen_name" id="screen_name" required></td>
+            </tr>
+            <tr>
+                <td><label>New screen_name</label></td>
+                <td><input class="form-control" type="text" name="newScreen_name" id="newScreen_name" required></td>
+            </tr>
+        </table>
+        <br />
+        <div class="text-center">
+            <button type="submit" id="updateName" class="btn btn-success">Submit</button>
+        </div>
+    </form>
+    <br />
+    <br />
+    <br />
+
+    <h6>Delete a tweet</h6>
+    <form id="form1" method="POST">
+        <table style="margin-left:auto; margin-right:auto;">
+            <tr>
+                <td><label>ID</label></td>
+                <td><input class="form-control" type="number" name="id" id="id" required></td>
+            </tr>
+        </table>
+        <br />
+        <div class="text-center">
+            <button type="submit" id="deleteTweet" class="btn btn-success">Submit</button>
+        </div>
+    </form>
+    <br />
+</body>
+
+</html>
